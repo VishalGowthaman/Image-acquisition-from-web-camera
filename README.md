@@ -21,8 +21,8 @@ Show the image or the live camera.
 End the program.
 ## Program:
 ~~~
-Developed By: Ragul AC
-Register No: 212221240042
+Developed By: Vishal Gowthaman KR
+Register No: 212221230123
 ~~~
 ## i) Write the frame as JPG file:
 ~~~
@@ -30,7 +30,7 @@ import cv2
 videoCaptureObject = cv2.VideoCapture(0)
 while(True):
     ret,frame = videoCaptureObject.read()
-    cv2.imwrite("pic.jpg",frame)
+    cv2.imwrite("picture.jpg",frame)
     if cv2.waitKey(1) == ord('q'):
         break
 videoCaptureObject.release()
@@ -42,7 +42,7 @@ import cv2
 videoCaptureObject = cv2.VideoCapture(0)
 while(True):
     ret,frame = videoCaptureObject.read()
-    cv2.imshow('frame',frame)
+    cv2.imshow('Vishal Gowthaman',frame)
     if cv2.waitKey(1) == ord('q'):
         break
 videoCaptureObject.release()
@@ -63,7 +63,7 @@ while True:
     image[height//2:, :width // 2] = smallerFrame
     image[:height//2, width//2:] = smallerFrame
     image[height//2:, width//2:] = smallerFrame
-    cv2.imshow('frame',image)
+    cv2.imshow('Vishal Gowthaman',image)
     if cv2.waitKey(1) == ord('q'):
         break
 im.release()
@@ -83,7 +83,7 @@ while True:
     image[height//2:, :width // 2] = smallerFrame
     image[:height//2, width//2:] = smallerFrame
     image[height//2:, width//2:] = cv2.rotate(smallerFrame,cv2.ROTATE_180)
-    cv2.imshow('frame',image)
+    cv2.imshow('image',image)
     if cv2.waitKey(1) == ord('q'):
         break
 im.release()
@@ -93,7 +93,7 @@ cv2.destroyAllWindows()
 ## Output:
 
 ### i) Write the frame as JPG image
-![output](1.jpg)
+![output](1.png)
 ### ii) Display the video
 ![output](2.png)
 ### iii) Display the video by resizing the window
